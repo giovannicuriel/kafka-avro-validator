@@ -1,0 +1,26 @@
+### Get a sample event payload
+GET /DogAdoptionEvent/sample HTTP/1.1
+Host: localhost:8080
+
+
+####
+POST /DogAdoptionEvent HTTP/1.1
+Host: localhost:8080
+Content-Type: application/json
+
+{
+  "payload": {
+    "id": "ed21fc95-d0ea-4de1-8412-895b6f4c7f8b",
+    "dog": {
+      "name": "Tobias",
+      "age": "4",
+      "breed": "brownie",
+      "weight": "10kg",
+      "size": "40cm"
+    },
+    "owner": {
+      "name": "Giovanni",
+      "age": "38"
+    }
+  }
+}

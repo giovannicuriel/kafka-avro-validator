@@ -1,0 +1,28 @@
+spring:
+  kafka:
+    # Indicates which server to connect
+    bootstrap-servers: localhost:9092
+    producer:
+      # Indicate that KafkaAvroSerializer will be used to serialize messages
+      value-serializer: io.confluent.kafka.serializers.KafkaAvroSerializer
+    properties:
+      # Which schema registry will be used
+      schema.registry.url: http://localhost:8081
+      # Avoid auto schema registration - useful to actually know what's going on
+      auto.register.schemas: false
+      # Avoid using a Generic$Record reader instead of a particular one
+      specific.avro.reader: true
+    consumer:
+      auto.start: true
+      # Consumer group ID for the listener
+      group-id: "kafka-avro-validator-consumer"
+      # Indicate that KafkaAvroDeserializer will be used to deserialize messages
+      value-deserializer: io.confluent.kafka.serializers.KafkaAvroDeserializer
+  jackson:
+    date-format: yyyy-MM-dd'T'HH:mm:ssZ
+    mapper:
+      ACCEPT_CASE_INSENSITIVE_ENUMS: true
+    property-naming-strategy: SNAKE_CASE
+
+server:
+  port: 8080

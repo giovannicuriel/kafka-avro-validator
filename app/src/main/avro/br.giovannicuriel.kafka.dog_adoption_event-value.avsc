@@ -1,0 +1,67 @@
+{
+  "type": "record",
+  "name": "DogAdoptionEvent",
+  "namespace": "br.giovannicuriel.kafka",
+  "doc": "Event indicating that a dog was recently adopted",
+  "fields": [
+    {
+      "name": "payload",
+      "type": {
+        "type": "record",
+        "name": "DogAdoption",
+        "fields": [
+          {
+            "name": "id",
+            "type": "string"
+          },
+          {
+            "name": "dog",
+            "type": {
+              "type": "record",
+              "name": "SuperDoguitoData",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "name": "age",
+                  "type": "string"
+                },
+                {
+                  "name": "breed",
+                  "type": "string"
+                },
+                {
+                  "name": "weight",
+                  "type": "string"
+                },
+                {
+                  "name": "size",
+                  "type": "string"
+                }
+              ]
+            }
+          },
+          {
+            "name": "owner",
+            "type": {
+              "type": "record",
+              "name": "OwnerData",
+              "fields": [
+                {
+                  "name": "name",
+                  "type": "string"
+                },
+                {
+                  "name": "age",
+                  "type": "string"
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}
