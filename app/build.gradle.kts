@@ -61,7 +61,7 @@ dependencies {
     // Avro dependency
     implementation("org.apache.avro:avro:1.10.2")
     implementation("org.apache.avro:trevni-core:1.10.2")
-    implementation("org.apache.avro:trevni-avro:1.10.2")
+    implementation("org.apache.avro:trevni-avro:1.11.1")
     implementation ("io.confluent:kafka-avro-serializer:6.2.0")
     implementation ("io.confluent:kafka-schema-registry-client:7.2.1")
 
