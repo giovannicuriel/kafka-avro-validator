@@ -63,7 +63,7 @@ dependencies {
     implementation("org.apache.avro:trevni-core:1.10.2")
     implementation("org.apache.avro:trevni-avro:1.10.2")
     implementation ("io.confluent:kafka-avro-serializer:6.2.0")
-    implementation ("io.confluent:kafka-schema-registry-client:6.2.0")
+    implementation ("io.confluent:kafka-schema-registry-client:7.2.1")
 
     // Spring-related dependencies
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
