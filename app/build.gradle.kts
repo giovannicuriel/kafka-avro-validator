@@ -17,7 +17,7 @@ plugins {
     id("com.github.imflog.kafka-schema-registry-gradle-plugin") version "0.8.0"
 
     // Avro plugin
-    id("com.github.davidmc24.gradle.plugin.avro") version "1.1.0"
+    id("com.github.davidmc24.gradle.plugin.avro") version "1.3.0"
 
     // Spring stuff
     id ("org.springframework.boot") version "2.5.4"
