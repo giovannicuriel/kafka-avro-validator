@@ -59,7 +59,7 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
 
     // Avro dependency
-    implementation("org.apache.avro:avro:1.10.2")
+    implementation("org.apache.avro:avro:1.11.1")
     implementation("org.apache.avro:trevni-core:1.10.2")
     implementation("org.apache.avro:trevni-avro:1.11.1")
     implementation ("io.confluent:kafka-avro-serializer:6.2.0")
