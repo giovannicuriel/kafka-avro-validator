@@ -59,7 +59,7 @@ dependencies {
     implementation("com.google.guava:guava:31.1-jre")
 
     // Avro dependency
-    implementation("org.apache.avro:avro:1.10.2")
+    implementation("org.apache.avro:avro:1.11.1")
     implementation("org.apache.avro:trevni-core:1.10.2")
     implementation("org.apache.avro:trevni-avro:1.11.1")
     implementation ("io.confluent:kafka-avro-serializer:7.2.1")
@@ -74,7 +74,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
 
     // Jackson - this will parse data classes from json
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.12.5")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
