@@ -8,7 +8,7 @@
 
 plugins {
     // Apply the org.jetbrains.kotlin.jvm Plugin to add support for Kotlin.
-    id("org.jetbrains.kotlin.jvm") version "1.7.10"
+    id("org.jetbrains.kotlin.jvm") version "1.7.20"
 
     // Apply the application plugin to add support for building a CLI application in Java.
     application
@@ -62,8 +62,8 @@ dependencies {
     implementation("org.apache.avro:avro:1.11.1")
     implementation("org.apache.avro:trevni-core:1.11.1")
     implementation("org.apache.avro:trevni-avro:1.11.1")
-    implementation ("io.confluent:kafka-avro-serializer:7.2.1")
-    implementation ("io.confluent:kafka-schema-registry-client:7.2.1")
+    implementation ("io.confluent:kafka-avro-serializer:7.3.0")
+    implementation ("io.confluent:kafka-schema-registry-client:7.3.0")
 
     // Spring-related dependencies
     annotationProcessor("org.springframework.boot:spring-boot-configuration-processor")
@@ -74,7 +74,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
 
     // Jackson - this will parse data classes from json
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.13.3")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.0")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
