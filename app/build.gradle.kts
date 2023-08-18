@@ -14,7 +14,7 @@ plugins {
     application
 
     // Schema registry plugin
-    id("com.github.imflog.kafka-schema-registry-gradle-plugin") version "1.8.0"
+    id("com.github.imflog.kafka-schema-registry-gradle-plugin") version "1.9.1"
 
     // Avro plugin
     id("com.github.davidmc24.gradle.plugin.avro") version "1.5.0"
