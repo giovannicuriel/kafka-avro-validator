@@ -74,7 +74,7 @@ dependencies {
     implementation("org.springframework.kafka:spring-kafka")
 
     // Jackson - this will parse data classes from json
-    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.14.2")
+    implementation("com.fasterxml.jackson.module:jackson-module-kotlin:2.15.2")
 
     // Use the Kotlin test library.
     testImplementation("org.jetbrains.kotlin:kotlin-test")
